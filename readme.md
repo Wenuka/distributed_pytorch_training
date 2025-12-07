@@ -40,7 +40,7 @@ To replicate this experiment, ensure the following files are in the same directo
 | DP     | 12.460 s       | 0.51× (slower)    | 25% (inefficient)  |
 | DDP    | 3.282 s        | 1.92× (faster)    | 96% (efficient)    |
 
-The results were the same using [`ResNet18`](http://localhost:8888/notebooks/multiGPU_training.ipynb). 
+The results were the same using [`ResNet18`](https://github.com/Wenuka/distributed_pytorch_training/blob/resnet18/multiGPU_training.ipynb). 
 
 ---
 
