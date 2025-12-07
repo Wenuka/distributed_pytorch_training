@@ -15,9 +15,7 @@ Python 3.12.11
 PyTorch: 2.8.0
 CUDA version (compiled): 12.8
 cuDNN version: 91002
-Num GPUs: 2
-- GPU 0: NVIDIA GeForce RTX 4070 Ti
-- GPU 1: NVIDIA GeForce RTX 4070 Ti
+GPUs: 2x NVIDIA GeForce RTX 4070 Ti
 ```
 
 ---
