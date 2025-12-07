@@ -44,7 +44,7 @@ def main():
     train_loader, sampler = get_cifar10_dataloaders(
         batch_size=args.per_gpu_batch_size,
         num_workers=args.num_workers,
-        distributed_flag=True,
+        distributed=True,
         rank=rank,
         world_size=world_size,
     )
