@@ -1,7 +1,8 @@
 # Multi-GPU Training Benchmark: Single GPU vs DataParallel vs DistributedDataParallel
 
 This repository benchmarks the performance of Single-GPU training, PyTorch DataParallel (DP), and DistributedDataParallel (DDP) using ResNet models on CIFAR-10.
-Training was executed on *vast.ai* using two consumer GPUs.
+
+Training was executed on [*vast.ai*](https://vast.ai/) using two consumer GPUs.
 
 ---
 
