@@ -56,3 +56,11 @@ The results were the same using [`ResNet18`](https://github.com/Wenuka/distribut
 
 **Conclusion:**  
 For multi-GPU training in PyTorch, **DistributedDataParallel is the recommended standard**. DataParallel generally adds unnecessary overhead and should be avoided for training workloads.
+
+### A Note on FSDP (Fully Sharded Data Parallel)
+
+**FSDP (ZeRO-3)** was omitted from this benchmark because it is designed for large-scale models where GPU memory is the primary constraint.
+
+In FSDP, parameters, gradients, and optimizer states are sharded across devices. For lightweight architectures like **ResNet-34**, this introduces significant communication overhead (constantly gathering weights) without providing any necessary memory relief.
+
+Therefore, **DDP** remains the optimal choice for this scale, while FSDP would be better suited for a follow-up benchmark on LLMs or Vision Transformers.
